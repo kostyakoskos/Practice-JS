@@ -1,0 +1,19 @@
+body {
+    background-color: green;
+}
+
+.message{
+    color:blueviolet;
+    background-color: brown;
+    border:10px solid black;
+}
+
+.success{
+    background-color:whitesmoke;
+}
+
+.warning{
+    background-color: tomato;
+    margin: 10px;
+    padding: auto;
+}

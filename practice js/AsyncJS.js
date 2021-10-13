@@ -47,28 +47,28 @@ console.log('Start3');
 //     console.log('Promise resolved');
 // });
 
-let myFirstPromise = new Promise((resolve, reject) => {
-    setTimeout(function () {
-        console.log('Preparing data');
-        const backendData = {
-            server: 'aws',
-            port: 2000,
-            status: 'working'
-        }
-        resolve();
-    }, 2000);
-});
+// let myFirstPromise = new Promise((resolve, reject) => {
+//     setTimeout(function () {
+//         console.log('Preparing data');
+//         const backendData = {
+//             server: 'aws',
+//             port: 2000,
+//             status: 'working'
+//         }
+//         resolve();
+//     }, 2000);
+// });
 
-myFirstPromise.then((data) => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            data.modified = true
-            resolve(data)
-        }, 2000)
-    })
-}).then(clientData => {
-    console.log('Data recieved ', clientData)
-})
+// myFirstPromise.then((data) => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             data.modified = true
+//             resolve(data)
+//         }, 2000)
+//     })
+// }).then(clientData => {
+//     console.log('Data recieved ', clientData)
+// })
 
 const sleep = ms => {
     return new Promise(resolve => {
