@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, Input } from '@angular/core'
+import { Card } from '../app.component';
 
 // Так тоже можно прописывать в @Component. Но так все в 1 файле, не удобно.
 // template: `
@@ -28,6 +29,8 @@ import { Component, OnInit } from '@angular/core'
 })
 
 export class CardComponent implements OnInit { 
+    @Input() card: Card = { title:'wq', text: 'qw'};
+
     title = 'My card Title';
 
     text: string     = 'My sample text';

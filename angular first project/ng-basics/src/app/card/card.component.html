@@ -1,8 +1,8 @@
 <div class="card">
     <h2 [ngStyle]= "{
-        color: title.length < 5 ? 'red' : 'blue',
-        fontWeight: title.length > 8 ? 'normal' : 'bold'
-    }">{{ title }}</h2>
+        color: card.title.length < 5 ? 'red' : 'blue',
+        fontWeight: card.title.length > 8 ? 'normal' : 'bold'
+    }">{{ card.title }}</h2>
     <h2>Card component</h2>
     <p>Morning is the best time to work</p>
     <strong>{{ number }}</strong>
