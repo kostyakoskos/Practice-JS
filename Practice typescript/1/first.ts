@@ -25,3 +25,15 @@ console.log(str);
 function throwError(message:string): never{
         throw new Error(message);
 }
+
+function infinite() : never{
+    while(true){}
+}
+
+type Login = string;
+
+type ID = string | number;
+const id1: ID = '123';
+const id2: ID = 123;
+
+type someType = string | null | undefined;

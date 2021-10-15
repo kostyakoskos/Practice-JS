@@ -40,8 +40,28 @@ const id2: ID = 123;
 const rect3 = {} as Rect;
 const rect4 = <Rect>{};
 
+Равнозначные классы Car и Car2: 
+class Car{
+    readonly model: string;
+    readonly numberOfWheels: number = 4;
 
+    constructor(theModel: string){
+        this.model = theModel;
+    }
+}
+class Car2{    
+    readonly numberOfWheels: number = 4;
+    constructor(readonly model: string) {}
+}
 
+Модификаторы доступа класса. Если не пишем некаких модификаторов, то по умолчанию они public.
+Protected(для первоначального класса и для классов, которые наследуют этот класс. Если создаем экземпляр класса cat, который наследует animal,
+то обращаться к protected полю класса animal нельзя), public, private.
 
+Абстрактные классы. Адстрактные методы.
+В абстрактных классах пишем абстрактные методы(которые надо обязательно реализовать в классах-наследниках).
+Ключевое слово abstract. 
+
+Generic.
 
 
